@@ -201,37 +201,37 @@
   margin: 0 0.053333rem;
   width: 2.666667rem;
   height: 1.226667rem;
-  background: url("/webactivity/yunying/static/images/guan-click_1840711.png");
+  background: url("/yunying/static/images/guan-click_1840711.png");
   -moz-background-size: 2.666667rem 1.226667rem;
        background-size: 2.666667rem 1.226667rem;
 }
 
 .method .method-title .guan {
-  background: url("/webactivity/yunying/static/images/guan_5dbfc5c.png");
+  background: url("/yunying/static/images/guan_5dbfc5c.png");
   -moz-background-size: 2.666667rem 1.226667rem;
        background-size: 2.666667rem 1.226667rem;
 }
 
 .method .method-title .zi {
-  background: url("/webactivity/yunying/static/images/zi_7021935.png");
+  background: url("/yunying/static/images/zi_7021935.png");
   -moz-background-size: 2.666667rem 1.226667rem;
        background-size: 2.666667rem 1.226667rem;
 }
 
 .method .method-title .zi-clicked {
-  background: url("/webactivity/yunying/static/images/zi-click_0fa766e.png");
+  background: url("/yunying/static/images/zi-click_0fa766e.png");
   -moz-background-size: 2.666667rem 1.226667rem;
        background-size: 2.666667rem 1.226667rem;
 }
 
 .method .method-title .pin {
-  background: url("/webactivity/yunying/static/images/pin_b351c49.png");
+  background: url("/yunying/static/images/pin_b351c49.png");
   -moz-background-size: 2.666667rem 1.226667rem;
        background-size: 2.666667rem 1.226667rem;
 }
 
 .method .method-title .pin-clicked {
-  background: url("/webactivity/yunying/static/images/pin-click_211eb13.png");
+  background: url("/yunying/static/images/pin-click_211eb13.png");
   -moz-background-size: 2.666667rem 1.226667rem;
        background-size: 2.666667rem 1.226667rem;
 }
@@ -246,7 +246,7 @@
   left: 0.84rem;
   width: 8.24rem;
   height: 7.626667rem;
-  background: url("/webactivity/yunying/static/images/card4-1_f42cddf.png");
+  background: url("/yunying/static/images/card4-1_f42cddf.png");
   -moz-background-size: 8.24rem 7.626667rem;
        background-size: 8.24rem 7.626667rem;
 }
@@ -293,13 +293,13 @@
 }
 
 .method .zi-container {
-  background: url("/webactivity/yunying/static/images/card4-2_e0c1e03.png");
+  background: url("/yunying/static/images/card4-2_e0c1e03.png");
   -moz-background-size: 8.24rem 7.626667rem;
        background-size: 8.24rem 7.626667rem;
 }
 
 .method .pin-container {
-  background: url("/webactivity/yunying/static/images/card4-3_5ed370c.png");
+  background: url("/yunying/static/images/card4-3_5ed370c.png");
   -moz-background-size: 8.24rem 7.626667rem;
        background-size: 8.24rem 7.626667rem;
 }
@@ -339,7 +339,7 @@
   bottom: 5.733333rem;
   width: 3.573333rem;
   height: 0.88rem;
-  background: url("/webactivity/yunying/static/images/go_41d474a.png") no-repeat;
+  background: url("/yunying/static/images/go_41d474a.png") no-repeat;
   -moz-background-size: 3.573333rem 0.88rem;
        background-size: 3.573333rem 0.88rem;
 }
@@ -660,4 +660,4 @@ body {
 
 .modal-form .first {
   margin-top: 15%;
-}.modal-form .close-btn{background-position:0px 0px}.modal-form .close-btn{background-image: url(/webactivity/yunying/musicFestival/index_z_aac2319.png)}
+}.modal-form .close-btn{background-position:0px 0px}.modal-form .close-btn{background-image: url(/yunying/musicFestival/index_z_aac2319.png)}
