@@ -1,0 +1,20 @@
+{
+  "name": "yunying-mock",
+  "version": "0.0.1",
+  "description": "the mock server configure",
+  "dependencies": {},
+  "devDependencies": {
+    "http": "0.0.0",
+    "koa": "^1.2.1",
+    "koa-proxy": "^0.6.0",
+    "koa-static": "^2.0.0",
+    "mockjs": "^1.0.1-beta2",
+    "path": "^0.12.7",
+    "pm2": "^1.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "huangwenming",
+  "license": "ISC"
+}

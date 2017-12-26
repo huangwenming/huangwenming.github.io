@@ -1,0 +1,27 @@
+{
+  "name": "yunying",
+  "version": "0.0.1",
+  "description": "the modules for yunying",
+  "dependencies": {},
+  "devDependencies": {
+    "fis-parser-node-sass": "^0.1.8",
+    "fis3-hook-module": "^1.2.2",
+    "fis3-postpackager-loader": "^1.3.12",
+    "fis3-preprocessor-cssprefixer": "^1.0.0",
+    "fis3-preprocessor-px2rem": "^1.0.0",
+    "http": "0.0.0",
+    "koa": "^1.2.1",
+    "koa-static": "^2.0.0",
+    "path": "^0.12.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mock-local-release": "fis3 release local -d mock",
+    "mock-local-start": "npm run mock-local-release && cd mock && node_modules/pm2/bin/pm2 start app.js",
+    "mock-local-stop": "cd mock && node_modules/pm2/bin/pm2 stop app.js",
+    "mock-local-restart": "cd mock && node_modules/pm2/bin/pm2 restart app.js",
+    "mock-local-kill": "cd mock && node_modules/pm2/bin/pm2 kill"
+  },
+  "author": "",
+  "license": "ISC"
+}

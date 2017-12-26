@@ -1,0 +1,439 @@
+.content-wrapper {
+  -webkit-perspective: 10.666667rem;
+  -moz-perspective: 10.666667rem;
+  perspective: 10.666667rem;
+  height: 100%;
+}
+
+.content-container {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 100%;
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.one .page-top {
+  z-index: 1;
+}
+
+.one .page-bottom {
+  z-index: 1;
+  -webkit-transform-origin: 50% 0;
+     -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: rotateX(180deg);
+     -moz-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.two .page-top {
+  z-index: 3;
+  -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.two .page-bottom {
+  z-index: 3;
+  -webkit-transform-origin: 50% 0;
+     -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.three .page-top {
+  z-index: 1;
+  -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  -webkit-transform: rotateX(-180deg);
+     -moz-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.three .page-bottom {
+  z-index: 1;
+}
+
+.page-top,
+.page-bottom {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+
+.page-top .content,
+.page-top .default-content,
+.page-top .desc,
+.page-top .method,
+.page-top .spot,
+.page-bottom .content,
+.page-bottom .default-content,
+.page-bottom .desc,
+.page-bottom .method,
+.page-bottom .spot {
+  position: relative;
+  width: 10rem;
+  height: 200%;
+}
+
+.page-bottom {
+  top: 50%;
+}
+
+.page-bottom .content,
+.page-bottom .default-content,
+.page-bottom .desc,
+.page-bottom .method,
+.page-bottom .spot {
+  position: relative;
+  top: -100%;
+  left: 0;
+}
+
+.arrow-up {
+  position: absolute;
+  width: 0.64rem;
+  height: 0.426667rem;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAMAAABjCgsuAAAAq1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Nr6iZAAAAOHRSTlMA9vrzCgTJKhEH3iLw7dKna2JdNC4dAeLZ1rKun5KMcVhPJgzOw6Kbl39MQzgX/HZmUg/ou4g8t8nPv+cAAAFaSURBVDjLlZQHj4JAEIWHptixgQ0VFRtgOcu9///LbpPLrJTjgJeQ7CMP5mN2WMqR0aBKGtd2rSr5cwfQ1qXjxguY9YBjSazIh3q1yVKw25TJBw84bxIaTcpg2acLntHvelsCK3ricrKlvSno/ov1dvAI2BRj2VcVfsTug3XQ/86bM+BlsDEKsYZNdM5sQscfx7EG2byloiYzKxWxp7f7LNaXQHUNNnNgOROXxOoLrHqqGe27NE20PdGBeMn6lLH4BZ/hvLEJnRiWLrAW+md9aFB2d80sVqIam9hGrVJYiggONEzl9wzSPQ9Frz2JtRBYBOx1vnFgTqksFh377DZdKNIksVoSyyKptYbJKGcERJvTarhAb5szZHPATf0XrRoUWS0fS8prozlkk4d1l85YAnOTXTHW2Ie6okJZjBV04ITEKsY6Ad9mcZrH3qXEKVGMpdEioAoaelRVPzXMLWOwx6sVAAAAAElFTkSuQmCC);
+  -moz-background-size: 0.64rem 0.426667rem;
+       background-size: 0.64rem 0.426667rem;
+  left: 4.68rem;
+  bottom: 4%;
+  -webkit-animation: up-and-down 1.2s ease-in infinite;
+     -moz-animation: up-and-down 1.2s ease-in infinite;
+          animation: up-and-down 1.2s ease-in infinite;
+}
+
+@-webkit-keyframes up-and-down {
+
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -0.266667rem, 0);
+            transform: translate3d(0, -0.266667rem, 0);
+  }
+}
+
+@-moz-keyframes up-and-down {
+
+  0% {
+    -moz-transform: translate3d(0, 0, 0);
+         transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -moz-transform: translate3d(0, -0.266667rem, 0);
+         transform: translate3d(0, -0.266667rem, 0);
+  }
+}
+
+@keyframes up-and-down {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -0.266667rem, 0);
+       -moz-transform: translate3d(0, -0.266667rem, 0);
+            transform: translate3d(0, -0.266667rem, 0);
+  }
+}
+
+.content .bg,
+.method .bg {
+  width: 10rem;
+  height: 100%;
+}
+
+.method .method-container {
+  position: absolute;
+  top: 34%;
+  left: 0;
+}
+
+.method .method-title {
+  position: relative;
+  width: 8.32rem;
+  height: 1.226667rem;
+  left: 0.84rem;
+}
+
+.method .method-title .guan-clicked,
+.method .method-title .guan,
+.method .method-title .zi,
+.method .method-title .zi-clicked,
+.method .method-title .pin,
+.method .method-title .pin-clicked {
+  display: inline-block;
+  margin: 0 0.053333rem;
+  width: 2.666667rem;
+  height: 1.226667rem;
+  background: url("/webactivity/yunying/static/images/guan-click_1840711.png");
+  -moz-background-size: 2.666667rem 1.226667rem;
+       background-size: 2.666667rem 1.226667rem;
+}
+
+.method .method-title .guan {
+  background: url("/webactivity/yunying/static/images/guan_5dbfc5c.png");
+  -moz-background-size: 2.666667rem 1.226667rem;
+       background-size: 2.666667rem 1.226667rem;
+}
+
+.method .method-title .zi {
+  background: url("/webactivity/yunying/static/images/zi_7021935.png");
+  -moz-background-size: 2.666667rem 1.226667rem;
+       background-size: 2.666667rem 1.226667rem;
+}
+
+.method .method-title .zi-clicked {
+  background: url("/webactivity/yunying/static/images/zi-click_0fa766e.png");
+  -moz-background-size: 2.666667rem 1.226667rem;
+       background-size: 2.666667rem 1.226667rem;
+}
+
+.method .method-title .pin {
+  background: url("/webactivity/yunying/static/images/pin_b351c49.png");
+  -moz-background-size: 2.666667rem 1.226667rem;
+       background-size: 2.666667rem 1.226667rem;
+}
+
+.method .method-title .pin-clicked {
+  background: url("/webactivity/yunying/static/images/pin-click_211eb13.png");
+  -moz-background-size: 2.666667rem 1.226667rem;
+       background-size: 2.666667rem 1.226667rem;
+}
+
+.method .guan-container,
+.method .zi-container,
+.method .pin-container {
+  position: absolute;
+  color: #fff;
+  font-size: 0.48rem;
+  top: 1.253333rem;
+  left: 0.84rem;
+  width: 8.24rem;
+  height: 7.626667rem;
+  background: url("/webactivity/yunying/static/images/card4-1_f42cddf.png");
+  -moz-background-size: 8.24rem 7.626667rem;
+       background-size: 8.24rem 7.626667rem;
+}
+
+.method .guan-container .fangshi,
+.method .zi-container .fangshi,
+.method .pin-container .fangshi {
+  margin: 1.333333rem 0.266667rem 0 0.266667rem;
+  line-height: 0.533333rem;
+}
+
+.method .guan-container .fangshi-two,
+.method .zi-container .fangshi-two,
+.method .pin-container .fangshi-two {
+  margin: 0.133333rem 0.266667rem 0 0.266667rem;
+  line-height: 0.533333rem;
+}
+
+.method .guan-container .fangshi-tips,
+.method .zi-container .fangshi-tips,
+.method .pin-container .fangshi-tips {
+  margin: 0.4rem 0.266667rem;
+  line-height: 0.533333rem;
+  font-size: 0.373333rem;
+}
+
+.method .guan-container .fours,
+.method .zi-container .fours,
+.method .pin-container .fours {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 1.92rem;
+  font-size: 0.533333rem;
+  width: 4.4rem;
+  height: 1.173333rem;
+  line-height: 1.173333rem;
+  text-align: center;
+  border: 0.053333rem solid #fff;
+  -webkit-border-radius: 0.16rem;
+     -moz-border-radius: 0.16rem;
+          border-radius: 0.16rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.method .zi-container {
+  background: url("/webactivity/yunying/static/images/card4-2_e0c1e03.png");
+  -moz-background-size: 8.24rem 7.626667rem;
+       background-size: 8.24rem 7.626667rem;
+}
+
+.method .pin-container {
+  background: url("/webactivity/yunying/static/images/card4-3_5ed370c.png");
+  -moz-background-size: 8.24rem 7.626667rem;
+       background-size: 8.24rem 7.626667rem;
+}
+
+.method .disable {
+  display: none;
+}
+
+.spot {
+  font-size: 0.506667rem;
+  color: #fff;
+}
+
+.spot .spot-bg {
+  width: 10rem;
+}
+
+.spot .self-drive,
+.spot .other-drive {
+  position: absolute;
+  display: inline-block;
+  bottom: 1.066667rem;
+  width: 3.653333rem;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  text-align: center;
+  border: 0.053333rem solid #fff;
+  -webkit-border-radius: 0.066667rem;
+     -moz-border-radius: 0.066667rem;
+          border-radius: 0.066667rem;
+}
+
+.spot .let-go {
+  position: absolute;
+  display: inline-block;
+  left: 3.213333rem;
+  bottom: 5.733333rem;
+  width: 3.573333rem;
+  height: 0.88rem;
+  background: url("/webactivity/yunying/static/images/go_41d474a.png") no-repeat;
+  -moz-background-size: 3.573333rem 0.88rem;
+       background-size: 3.573333rem 0.88rem;
+}
+
+.spot .explain-right {
+  position: absolute;
+  display: inline-block;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.32rem;
+  text-align: center;
+}
+
+.spot .other-drive {
+  left: 3.173333rem;
+}
+
+.spot .self-drive {
+  height: 2.4rem;
+  width: 2.4rem;
+  line-height: 2.4rem;
+  left: 3.666667rem;
+  bottom: 2.666667rem;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.desc .card-one,
+.desc .card-two,
+.desc .card-three,
+.desc .card-four {
+  position: absolute;
+  z-index: 4;
+  width: 10rem;
+  height: 100%;
+  opacity: 1;
+}
+
+.desc .card-two,
+.desc .card-three,
+.desc .card-four {
+  opacity: 0;
+  z-index: 3;
+}
+
+.desc .card-three,
+.desc .card-four {
+  z-index: 2;
+}
+
+.desc .card-four {
+  z-index: 1;
+}
+
+.desc .card-wrapper,
+.desc .four-card-wrapper {
+  position: absolute;
+  z-index: 5;
+  width: 10rem;
+  height: 100%;
+}
+
+.desc .card-wrapper ul,
+.desc .four-card-wrapper ul {
+  list-style: none;
+  position: relative;
+  padding-left: 0.84rem;
+  top: 41%;
+  width: 33.6rem;
+  height: 7.946667rem;
+  max-height: 45%;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform .2s linear;
+     -moz-transition: -moz-transform .2s linear;
+          transition: transform .2s linear;
+}
+
+.desc .card-wrapper ul li,
+.desc .four-card-wrapper ul li {
+  float: left;
+  width: 8.4rem;
+  height: 100%;
+  overflow: hidden;
+}
+
+.desc .card-wrapper ul li img,
+.desc .four-card-wrapper ul li img {
+  position: relative;
+  left: 0.413333rem;
+  width: 7.226667rem;
+  height: 7.613333rem;
+  max-height: 100%;
+}

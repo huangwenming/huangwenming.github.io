@@ -1,0 +1,1 @@
+define("mock/mock.config",function(t,o,c){var i={staticDir:"yunying",proxyArray:[{path:"/activity/*",proxy:{host:"http://insurance.che.baidu.com"},method:"GET"},{path:"/mbc/**/*",proxy:{host:"http://cq02-map-sv-control04.cq02.baidu.com:8222"},method:"POST"}]};c.exports=i});
