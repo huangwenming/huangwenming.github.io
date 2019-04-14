@@ -1,0 +1,315 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="user-scalable=no,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,viewport-fit=cover"><title>resume</title><style type=text/css ls_id=/infoPage/static/css/common.0a40bdcd.css></style><style type=text/css ls_id=/infoPage/static/css/test.54ab5016.css></style><style type=text/css ls_id=/infoPage/static/css/common.0a40bdcd.css></style><style type=text/css ls_id=/infoPage/static/css/test.54ab5016.css></style><script>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeCss(sId, fileUrl, source) {
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            // 为准备内嵌的style元素，内嵌样式，同时将css文件内容计入缓存
+                            var backupCss = document.querySelector("style[ls_id='" + sId + "']");
+                            backupCss.innerHTML = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.css/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.css/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                        }
+                    }if (localStorage) {var cssFromCache = localStorage.getItem("/infoPage/static/css/common.0a40bdcd.css");var cssDom = document.querySelector("style[ls_id='/infoPage/static/css/common.0a40bdcd.css']");if (cssFromCache) {cssDom.innerHTML = cssFromCache;}else {ajaxPage("/infoPage/static/css/common.0a40bdcd.css", "/infoPage/static/css/common.0a40bdcd.css", "css")}} else {cssDom.setAttribute("href","/infoPage/static/css/common.0a40bdcd.css");}</script><script>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeCss(sId, fileUrl, source) {
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            // 为准备内嵌的style元素，内嵌样式，同时将css文件内容计入缓存
+                            var backupCss = document.querySelector("style[ls_id='" + sId + "']");
+                            backupCss.innerHTML = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.css/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.css/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                        }
+                    }if (localStorage) {var cssFromCache = localStorage.getItem("/infoPage/static/css/test.54ab5016.css");var cssDom = document.querySelector("style[ls_id='/infoPage/static/css/test.54ab5016.css']");if (cssFromCache) {cssDom.innerHTML = cssFromCache;}else {ajaxPage("/infoPage/static/css/test.54ab5016.css", "/infoPage/static/css/test.54ab5016.css", "css")}} else {cssDom.setAttribute("href","/infoPage/static/css/test.54ab5016.css");}</script><script>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeCss(sId, fileUrl, source) {
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            // 为准备内嵌的style元素，内嵌样式，同时将css文件内容计入缓存
+                            var backupCss = document.querySelector("style[ls_id='" + sId + "']");
+                            backupCss.innerHTML = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.css/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.css/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                        }
+                    }if (localStorage) {var cssFromCache = localStorage.getItem("/infoPage/static/css/common.0a40bdcd.css");var cssDom = document.querySelector("style[ls_id='/infoPage/static/css/common.0a40bdcd.css']");if (cssFromCache) {cssDom.innerHTML = cssFromCache;}else {ajaxPage("/infoPage/static/css/common.0a40bdcd.css", "/infoPage/static/css/common.0a40bdcd.css", "css")}} else {cssDom.setAttribute("href","/infoPage/static/css/common.0a40bdcd.css");}</script><script>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeCss(sId, fileUrl, source) {
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            // 为准备内嵌的style元素，内嵌样式，同时将css文件内容计入缓存
+                            var backupCss = document.querySelector("style[ls_id='" + sId + "']");
+                            backupCss.innerHTML = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.css/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.css/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                        }
+                    }if (localStorage) {var cssFromCache = localStorage.getItem("/infoPage/static/css/test.54ab5016.css");var cssDom = document.querySelector("style[ls_id='/infoPage/static/css/test.54ab5016.css']");if (cssFromCache) {cssDom.innerHTML = cssFromCache;}else {ajaxPage("/infoPage/static/css/test.54ab5016.css", "/infoPage/static/css/test.54ab5016.css", "css")}} else {cssDom.setAttribute("href","/infoPage/static/css/test.54ab5016.css");}</script></head><body><div id=app><keep-alive><router-view :key=$route.fullPath></router-view></keep-alive></div><script ls_id=/infoPage/static/js/vendor.336ca00e692d68e68b6e.js>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeJs(sId, fileUrl, source) {
+                        // alert(fileUrl)
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            var oHead = document.getElementsByTagName("HEAD").item(0);
+                            var oScript = document.createElement("script"); oScript.type = "text/javascript";
+                            oScript.id = sId;
+                            oScript.defer = true;
+                            oScript.text = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.js/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.js/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                            oHead.appendChild(oScript);
+                        }
+                    }if (localStorage) {
+var scriptFromCache = localStorage.getItem("/infoPage/static/js/vendor.336ca00e692d68e68b6e.js");
+var scriptDom = document.querySelector("[ls_id='/infoPage/static/js/vendor.336ca00e692d68e68b6e.js']");
+if (scriptFromCache) {
+scriptDom.text = (new Function(scriptFromCache))();
+}
+else {
+ajaxPage("/infoPage/static/js/vendor.336ca00e692d68e68b6e.js", "/infoPage/static/js/vendor.336ca00e692d68e68b6e.js", "js")
+}}
+ else {
+scriptDom.defer = true;
+scriptDom.setAttribute("src","/infoPage/static/js/vendor.336ca00e692d68e68b6e.js");
+}</script><script ls_id=/infoPage/static/js/common.757c34fdd57c94c7aef5.js>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeJs(sId, fileUrl, source) {
+                        // alert(fileUrl)
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            var oHead = document.getElementsByTagName("HEAD").item(0);
+                            var oScript = document.createElement("script"); oScript.type = "text/javascript";
+                            oScript.id = sId;
+                            oScript.defer = true;
+                            oScript.text = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.js/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.js/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                            oHead.appendChild(oScript);
+                        }
+                    }if (localStorage) {
+var scriptFromCache = localStorage.getItem("/infoPage/static/js/common.757c34fdd57c94c7aef5.js");
+var scriptDom = document.querySelector("[ls_id='/infoPage/static/js/common.757c34fdd57c94c7aef5.js']");
+if (scriptFromCache) {
+scriptDom.text = (new Function(scriptFromCache))();
+}
+else {
+ajaxPage("/infoPage/static/js/common.757c34fdd57c94c7aef5.js", "/infoPage/static/js/common.757c34fdd57c94c7aef5.js", "js")
+}}
+ else {
+scriptDom.defer = true;
+scriptDom.setAttribute("src","/infoPage/static/js/common.757c34fdd57c94c7aef5.js");
+}</script><script ls_id=/infoPage/static/js/test.a51e159be7effb30d3e9.js>function getHttpRequest() {
+                        if (window.XMLHttpRequest) return new XMLHttpRequest();
+                        else if (window.ActiveXObject) return new ActiveXObject("MsXml2.XmlHttp");
+                    }function ajaxPage(sId, url, type) {
+                        var oXmlHttp = getHttpRequest();
+                        oXmlHttp.onreadystatechange = function () {
+                            if ( oXmlHttp.readyState == 4 ){
+                                if ( oXmlHttp.status == 200 || oXmlHttp.status == 304 ) {
+                                    type == 'js' && (includeJs(sId, url, oXmlHttp.responseText));
+                                    // type如果是css，需要立即修改css
+                                    type == 'css' && (includeCss(sId, url, oXmlHttp.responseText));
+                                }
+                            }
+                        };
+                        oXmlHttp.open("GET", url, false);
+                        oXmlHttp.send(null);
+                    }function includeJs(sId, fileUrl, source) {
+                        // alert(fileUrl)
+                        if (( source != null ) && ( !document.getElementById(sId) )) {
+                            var oHead = document.getElementsByTagName("HEAD").item(0);
+                            var oScript = document.createElement("script"); oScript.type = "text/javascript";
+                            oScript.id = sId;
+                            oScript.defer = true;
+                            oScript.text = source;
+                            try {
+                                // 为了防止localstorage存储溢出，需要过期的缓存进行处理，默认采用chunk的hash值做新旧区分
+                                var regResult = /(.*)\.[0-9a-z]*\.js/.exec(sId);
+                                for (var i = 0, len = localStorage.length; i < len; i++){
+                                    var key = localStorage.key(i);
+                                    var oldResult = /(.*)\.[0-9a-z]*\.js/.exec(key)
+                                    if (regResult && oldResult && regResult[1] && oldResult[1] && regResult[1] == oldResult[1]) {
+                                        // console.log(regResult);
+                                        // console.log(oldResult);
+                                        localStorage.removeItem(key);
+                                    }
+                                }
+                                localStorage.setItem(sId, source);
+                            } catch (e) {
+                                console.log(e);
+                            }
+                            oHead.appendChild(oScript);
+                        }
+                    }if (localStorage) {
+var scriptFromCache = localStorage.getItem("/infoPage/static/js/test.a51e159be7effb30d3e9.js");
+var scriptDom = document.querySelector("[ls_id='/infoPage/static/js/test.a51e159be7effb30d3e9.js']");
+if (scriptFromCache) {
+scriptDom.text = (new Function(scriptFromCache))();
+}
+else {
+ajaxPage("/infoPage/static/js/test.a51e159be7effb30d3e9.js", "/infoPage/static/js/test.a51e159be7effb30d3e9.js", "js")
+}}
+ else {
+scriptDom.defer = true;
+scriptDom.setAttribute("src","/infoPage/static/js/test.a51e159be7effb30d3e9.js");
+}</script></body></html>
